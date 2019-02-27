@@ -1,0 +1,48 @@
+#kkBody {
+    display: inline;
+    float: none;
+    width: 1092px;
+    margin: 0 auto;
+    text-align: left;
+    color: orange;
+}
+
+#kkTop {
+    width: 915px;
+}
+
+.mainMenu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.link .text {
+    display: block;
+    font-size: 20px;
+    font-family: NanumBarunGothic, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.content {
+    margin-left: 40px;
+    padding-top: 50px;
+}
+
+.mainMenu > li {
+float: left;
+border: 1px solid black;
+background: #35477d;
+}
+
+.mainMenu > li > a {
+    font-size: 0.85rem;
+color: white;
+text-align: center;
+text-decoration: none;
+display: block;
+padding: 8px 25px;
+border-right: 1px solid black;
+}

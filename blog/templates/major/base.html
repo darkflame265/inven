@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="{% static 'css/base_css.css' %}">
+</head>
+<body>
+    <div id="kkBody">
+        <nav id="kkTop">
+            <a href="{% url 'go_home' %}" target="_self" class="link">
+                        컴퓨터 인벤
+                    </a>
+            <ul class="mainMenu">
+                <li>
+                    <a href="{% url 'go_home' %}" target="_self" class="link">
+                        <span class="text">컴퓨터 인벤</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'item_menu1' %}" target="_self" class="link">
+                        <span class="text">자유게시판</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'item_menu2' %}" target="_self" class="link">
+                        <span class="text">공략게시판</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'item_menu3' %}" target="_self" class="link">
+                        <span class="text">채팅방</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        {% block content %}
+        <div class="kkMid">
+            <ui class="noticeMenu">
+                공지사항
+                <li>공지사항1</li>
+            </ui>
+        </div>
+        {% endblock %}
+    </div>
+</body>
+</html>
